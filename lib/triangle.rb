@@ -20,10 +20,11 @@ class Triangle
           raise TriangleError
        rescue TriangleError => error
          puts error.message
-
        end
+     else
+       binding.pry
     end
-    binding.pry
+
   end
 
   class TriangleError < StandardError
